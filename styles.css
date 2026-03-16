@@ -1,0 +1,23 @@
+/* 1. Grid container */
+header {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    align-items: center; /* Center items vertically */
+    padding: 20px;
+
+}
+
+.nav{
+    display: grid;
+    justify-content: space-between; /* Center items vertically */
+}
+
+.myskills{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Four equal columns */
+    align-items: center; /* Center items vertically */
+    padding: 20px;
+}
+

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyBuddy — Find Your Study Group</title>
+
+  <!-- Tailwind CSS via CDN — no install needed -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- ============================================================
+       HERO SECTION
+       - Gradient background using bg-gradient-to-r
+       - Large heading (text-4xl), subtext (text-xl), CTA button
+       - Centered content with text-center and max-w container
+       - py-20 gives generous vertical padding
+       ============================================================ -->
+  <section class="bg-gradient-to-r from-indigo-600 to-purple-700 text-white py-20">
+    <div class="max-w-4xl mx-auto text-center px-4">
+
+      <!-- Large heading — text-4xl on mobile, text-5xl on larger screens -->
+      <h1 class="text-4xl font-extrabold mb-4">
+        Never Study Alone Again
+      </h1>
+
+      <!-- Subtext — explains what the product does -->
+      <p class="text-xl mb-8 text-indigo-100">
+        StudyBuddy connects South African university students with study groups
+        in their course, campus, and neighbourhood.
+      </p>
+
+      <!-- CTA button — stands out with white bg on dark gradient -->
+      <!-- px-8 py-3 for comfortable click target, rounded-full for pill shape -->
+      <a href="#features" class="bg-white text-indigo-700 font-bold px-8 py-3 rounded-full hover:bg-indigo-100 transition">
+        Find Your Group
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FEATURES GRID
+       - 3 feature cards in a responsive grid
+       - grid-cols-1 on mobile (stacked), md:grid-cols-3 on desktop
+       - Each card: white bg, padding, rounded corners, shadow
+       - gap-8 spaces the cards evenly
+       ============================================================ -->
+  <section id="features" class="max-w-5xl mx-auto py-16 px-4">
+
+    <!-- Section heading -->
+    <h2 class="text-3xl font-bold text-center mb-12">
+      Why Students Love StudyBuddy
+    </h2>
+
+    <!-- Responsive grid: 1 column mobile → 3 columns desktop -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Feature 1 — Course Matching -->
+      <div class="bg-white p-6 rounded-lg shadow text-center">
+        <div class="text-4xl mb-4">📚</div>
+        <h3 class="text-xl font-semibold mb-2">Course Matching</h3>
+        <p class="text-gray-600">
+          Automatically find students taking the same modules at your university.
+          No more WhatsApp group hunting.
+        </p>
+      </div>
+
+      <!-- Feature 2 — Study Spots -->
+      <div class="bg-white p-6 rounded-lg shadow text-center">
+        <div class="text-4xl mb-4">📍</div>
+        <h3 class="text-xl font-semibold mb-2">Study Spots</h3>
+        <p class="text-gray-600">
+          Discover the best study spots near campus — from libraries to
+          coffee shops rated by other students.
+        </p>
+      </div>
+
+      <!-- Feature 3 — Exam Countdown -->
+      <div class="bg-white p-6 rounded-lg shadow text-center">
+        <div class="text-4xl mb-4">⏰</div>
+        <h3 class="text-xl font-semibold mb-2">Exam Countdown</h3>
+        <p class="text-gray-600">
+          Shared exam timelines keep your group on track. Get reminders
+          and celebrate milestones together.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       TESTIMONIALS SECTION (Extension Task)
+       - Customer quotes in styled cards
+       - Shows social proof — real SA student names
+       - Uses italic text and a coloured left border for quote style
+       ============================================================ -->
+  <section class="bg-indigo-50 py-16 px-4">
+    <div class="max-w-5xl mx-auto">
+
+      <h2 class="text-3xl font-bold text-center mb-12">
+        What Students Say
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Testimonial 1 -->
+        <div class="bg-white p-6 rounded-lg shadow border-l-4 border-indigo-500">
+          <p class="italic text-gray-600 mb-4">
+            "StudyBuddy helped me find a study group for BCom Accounting in my
+            first week at Wits. I went from stressed to sorted."
+          </p>
+          <p class="font-semibold">— Thandi Mokoena, Wits University</p>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-white p-6 rounded-lg shadow border-l-4 border-purple-500">
+          <p class="italic text-gray-600 mb-4">
+            "The study spots feature is a game-changer. Found a quiet spot in
+            Stellenbosch I never knew existed."
+          </p>
+          <p class="font-semibold">— Jaco van der Merwe, Stellenbosch University</p>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-white p-6 rounded-lg shadow border-l-4 border-pink-500">
+          <p class="italic text-gray-600 mb-4">
+            "Our group went from a 52% average to 74% after studying together
+            through StudyBuddy. It actually works!"
+          </p>
+          <p class="font-semibold">— Naledi Dlamini, UCT</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER (Extension Task)
+       - Links and social media icons (emoji as placeholders)
+       - Dark background to contrast with the page
+       - Simple grid layout for link groups
+       ============================================================ -->
+  <footer class="bg-gray-900 text-gray-300 py-12 px-4">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Brand column -->
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">StudyBuddy</h3>
+        <p class="text-sm">
+          Connecting SA students with study groups since 2026.
+          Built with ❤️ in South Africa.
+        </p>
+      </div>
+
+      <!-- Quick links -->
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-white transition">About Us</a></li>
+          <li><a href="#" class="hover:text-white transition">How It Works</a></li>
+          <li><a href="#" class="hover:text-white transition">Universities</a></li>
+          <li><a href="#" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social media (emoji placeholders) -->
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">Follow Us</h3>
+        <div class="flex space-x-4 text-2xl">
+          <a href="#" class="hover:text-white transition">📘</a>
+          <a href="#" class="hover:text-white transition">🐦</a>
+          <a href="#" class="hover:text-white transition">📸</a>
+          <a href="#" class="hover:text-white transition">💼</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Copyright bar -->
+    <div class="max-w-5xl mx-auto mt-8 pt-8 border-t border-gray-700 text-center text-sm">
+      <p>&copy; 2026 StudyBuddy. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
